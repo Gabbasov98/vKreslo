@@ -10,135 +10,507 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-    <title>Главная</title>
+    <title>Дашборд</title>
 </head>
 
 
-
-<style>
-    .wrapper a {
-        font-size: 30px;
-        text-transform: capitalize;
-    }
-
-    .wrapper button {
-        margin-bottom: 25px;
-        width: 300px;
-        height: 45px;
-    }
-</style>
-
 <body class="m-page">
+    <div class="wrapper">
+        <main class="content">
 
-    <div class="wrapper" style="padding: 50px;">
-        <a href="index.html" style="display: block; margin-bottom: 20px;">
-            Главная
-        </a>
-        <a href="login-master.html" style="display: block; margin-bottom: 20px;">
-            Логин
-        </a>
-        <a href="login-master2.html" style="display: block; margin-bottom: 20px;">
-            Логин 2
-        </a>
-        <a href="login-master3.html" style="display: block; margin-bottom: 20px;">
-            Логин 3
-        </a>
-        <a href="login-master4.html" style="display: block; margin-bottom: 20px;">
-            Логин 4
-        </a>
-        <a href="login-master5.html" style="display: block; margin-bottom: 20px;">
-            Логин 5
-        </a>
-        <a href="reg-master.html" style="display: block; margin-bottom: 20px;">
-            Регистрация
-        </a>
-        <a href="reg-master2.html" style="display: block; margin-bottom: 20px;">
-            Регистрация 2
-        </a>
-        <a href="reg-master3.html" style="display: block; margin-bottom: 20px;">
-            Регистрация 3
-        </a>
-        <a href="reg-master4.html" style="display: block; margin-bottom: 20px;">
-            Регистрация 4
-        </a>
-        <a href="reg-master5.html" style="display: block; margin-bottom: 20px;">
-            Регистрация 5
-        </a>
-        <a href="reg-master5-cancel.html" style="display: block; margin-bottom: 20px;">
-            Регистрация 5 (Отказ)
-        </a>
-        <a href="reg-master6.html" style="display: block; margin-bottom: 20px;">
-            Регистрация 6
-        </a>
-        <a href="reg-master7.html" style="display: block; margin-bottom: 20px;">
-            Регистрация 7
-        </a>
+            <div class="profile">
+                <div class="container">
+                    <div class="profile__inner">
+                        <div class="profile-header">
+                            <div class="profile-header__inner _flex-between">
+                                <a href="" class="profile-header__logo">
+                                    <img src="img/logo.svg" alt="">
+                                </a>
+                                <div class="profile-search">
+                                    <input type="text" placeholder="Найти место">
+                                    <button class="profile-search__btn">
+                                        <img src="img/search.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="profile-header__action _flex">
+                                    <button class="profile-header__notification notification-btn">
+                                        <img src="img/notification.svg" alt="">
+                                        <span></span>
+                                    </button>
+                                    <a href="" class="profile-header__lk avatar">
+                                        <img src="img/avatar.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class="header-lk">
+                                    <div class="avatar">
+                                        <img src="img/avatar.webp" alt="">
+                                    </div>
+                                    <div class="header-lk__info">
+                                        <div class="text14 lsp2 opacity-60">
+                                            Барбер
+                                        </div>
+                                        <div class="text16 lsp2">
+                                            Замашных Андрей
+                                        </div>
+                                    </div>
+                                    <button class="header-lk__btn">
+                                        <img src="img/dots.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
 
-        <a href="profile.html" style="display: block; margin-bottom: 20px;">
-            Профиль
-        </a>
-        <button data-modal="contactsModal" style="border: 2px solid #000;margin-bottom: 20px;">
-            Контакты
-        </button>
-        <button data-modal="reviewsModal" style="border: 2px solid #000;margin-bottom: 20px;">
-            Отзывы
-        </button>
-        <button data-modal="reviewsModal2" style="border: 2px solid #000;margin-bottom: 20px;">
-            Отзывы 2
-        </button>
-        <button data-modal="portfolioModal" style="border: 2px solid #000;margin-bottom: 20px;">
-            Портфолио
-        </button>
+                        </div>
+                        <div class="profile-sidebar">
+                            <div class="profile-sidebar__inner">
+                                <div class="profile-sidebar__top _flex-between">
+                                    <a href="" class="profile-sidebar__logo">
+                                        <img src="img/logo.svg" alt="">
+                                    </a>
+                                    <button class="_toggle-menu profile-sidebar__close close-btn">
+                                        <img src="img/close2.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="profile-sidebar__links">
+                                    <a href="" class="profile-sidebar__link ">
+                                        <div class="profile-sidebar__link-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                <path d="M1 24.0008H23V12.0008C23.0001 11.8694 22.9743 11.7393 22.9241 11.6179C22.8739 11.4965 22.8003 11.3862 22.7075 11.2933L12.7075 1.29329C12.6146 1.20031 12.5043 1.12655 12.3829 1.07623C12.2615 1.0259 12.1314 1 12 1C11.8686 1 11.7385 1.0259 11.6171 1.07623C11.4957 1.12655 11.3854 1.20031 11.2925 1.29329L1.2925 11.2933C1.19967 11.3862 1.12605 11.4965 1.07586 11.6179C1.02568 11.7393 0.999897 11.8694 1 12.0008V24.0008Z" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-sidebar__link-text">
+                                            <div class="text18 lsp1">Профиль</div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="profile-sidebar__link ">
+                                        <div class="profile-sidebar__link-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                <path d="M26.1804 5.89448L9.89881 3.01774C9.35495 2.92165 8.83616 3.28464 8.74007 3.8285L5.00816 24.9501C4.91207 25.494 5.27506 26.0127 5.81892 26.1088L22.1005 28.9856C22.6443 29.0817 23.1631 28.7187 23.2592 28.1748L26.9911 7.05322C27.0872 6.50936 26.7242 5.99057 26.1804 5.89448Z" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12.1562 7.47656L22.5287 9.30906" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M21.8347 13.2473L11.4609 11.416" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M15.9519 16.2717L10.7656 15.3555" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-sidebar__link-text">
+                                            <div class="text18 lsp1">Резюме</div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="profile-sidebar__link ">
+                                        <div class="profile-sidebar__link-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                <path d="M15.9988 23.6363L22.8388 27.8426C23.0162 27.9503 23.2216 28.003 23.4291 27.994C23.6365 27.985 23.8366 27.9148 24.0041 27.7921C24.1716 27.6694 24.2989 27.4999 24.3701 27.3048C24.4412 27.1098 24.4529 26.898 24.4038 26.6963L22.5438 18.8476L28.6313 13.5976C28.7865 13.4613 28.8984 13.2825 28.9531 13.0834C29.0079 12.8842 29.0032 12.6734 28.9395 12.4769C28.8758 12.2804 28.756 12.1069 28.5948 11.9777C28.4336 11.8485 28.2381 11.7694 28.0325 11.7501L20.0438 11.1001L16.9663 3.65007C16.8878 3.45787 16.7539 3.29339 16.5816 3.17761C16.4092 3.06183 16.2064 3 15.9988 3C15.7912 3 15.5883 3.06183 15.4159 3.17761C15.2436 3.29339 15.1097 3.45787 15.0313 3.65007L11.9538 11.1001L3.965 11.7501C3.75796 11.7683 3.56086 11.847 3.39834 11.9766C3.23582 12.1061 3.11507 12.2807 3.05119 12.4785C2.98731 12.6763 2.98312 12.8885 3.03916 13.0886C3.09519 13.2888 3.20896 13.468 3.36625 13.6038L9.45375 18.8538L7.59375 26.6963C7.54458 26.898 7.55631 27.1098 7.62745 27.3048C7.69859 27.4999 7.82595 27.6694 7.99344 27.7921C8.16093 27.9148 8.36103 27.985 8.56845 27.994C8.77586 28.003 8.98129 27.9503 9.15875 27.8426L15.9988 23.6363Z" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-sidebar__link-text">
+                                            <div class="text18 lsp1">Избранное</div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="profile-sidebar__link ">
+                                        <div class="profile-sidebar__link-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                <path d="M16 10V16L21 19" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9 13H4V8" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M8.45 24.0005C10.0225 25.4843 11.9973 26.4718 14.1278 26.8396C16.2583 27.2075 18.4499 26.9393 20.4289 26.0687C22.4078 25.1981 24.0864 23.7636 25.2547 21.9445C26.4231 20.1254 27.0295 18.0023 26.9982 15.8406C26.9668 13.6788 26.2991 11.5742 25.0785 9.78968C23.8579 8.0052 22.1385 6.61999 20.1351 5.80711C18.1318 4.99424 15.9333 4.78975 13.8144 5.21919C11.6954 5.64864 9.75004 6.69298 8.22125 8.22173C6.75 9.71173 5.535 11.1167 4 13.0005" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-sidebar__link-text">
+                                            <div class="text18 lsp1">История</div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="profile-sidebar__link ">
+                                        <div class="profile-sidebar__link-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                <path d="M5 7V23C5 23.5304 5.21071 24.0391 5.58579 24.4142C5.96086 24.7893 6.46957 25 7 25H27C27.2652 25 27.5196 24.8946 27.7071 24.7071C27.8946 24.5196 28 24.2652 28 24V10C28 9.73478 27.8946 9.48043 27.7071 9.29289C27.5196 9.10536 27.2652 9 27 9H7C6.46957 9 5.96086 8.78929 5.58579 8.41421C5.21071 8.03914 5 7.53043 5 7ZM5 7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H24" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M22.5 18C23.3284 18 24 17.3284 24 16.5C24 15.6716 23.3284 15 22.5 15C21.6716 15 21 15.6716 21 16.5C21 17.3284 21.6716 18 22.5 18Z" fill="#B9B9B9" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-sidebar__link-text">
+                                            <div class="text18 lsp1">Баланс</div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="profile-sidebar__link ">
+                                        <div class="profile-sidebar__link-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                                <path d="M12.6875 21.75C17.6926 21.75 21.75 17.6926 21.75 12.6875C21.75 7.68242 17.6926 3.625 12.6875 3.625C7.68242 3.625 3.625 7.68242 3.625 12.6875C3.625 17.6926 7.68242 21.75 12.6875 21.75Z" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M19.0938 19.0957L25.3729 25.3749" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-sidebar__link-text">
+                                            <div class="text18 lsp1">Поиск</div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="profile-sidebar__link ">
+                                        <div class="profile-sidebar__link-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                <path d="M10 17H22" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 12V9C6 7.93913 6.42143 6.92172 7.17157 6.17157C7.92172 5.42143 8.93913 5 10 5H22C23.0609 5 24.0783 5.42143 24.8284 6.17157C25.5786 6.92172 26 7.93913 26 9V12" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10 21V16C10 15.2089 9.76541 14.4355 9.32588 13.7777C8.88635 13.1199 8.26164 12.6072 7.53074 12.3045C6.79983 12.0017 5.99556 11.9225 5.21964 12.0769C4.44372 12.2312 3.73098 12.6122 3.17157 13.1716C2.61216 13.731 2.2312 14.4437 2.07686 15.2196C1.92252 15.9956 2.00173 16.7998 2.30448 17.5307C2.60723 18.2616 3.11992 18.8864 3.77772 19.3259C4.43552 19.7654 5.20888 20 6 20V25C6 25.2652 6.10536 25.5196 6.2929 25.7071C6.48043 25.8946 6.73479 26 7 26H25C25.2652 26 25.5196 25.8946 25.7071 25.7071C25.8946 25.5196 26 25.2652 26 25V20C26.7911 20 27.5645 19.7654 28.2223 19.3259C28.8801 18.8864 29.3928 18.2616 29.6955 17.5307C29.9983 16.7998 30.0775 15.9956 29.9231 15.2196C29.7688 14.4437 29.3878 13.731 28.8284 13.1716C28.269 12.6122 27.5563 12.2312 26.7804 12.0769C26.0044 11.9225 25.2002 12.0017 24.4693 12.3045C23.7384 12.6072 23.1136 13.1199 22.6741 13.7777C22.2346 14.4355 22 15.2089 22 16V21" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-sidebar__link-text">
+                                            <div class="text18 lsp1">Аренда мест</div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="profile-sidebar__link _active">
+                                        <div class="profile-sidebar__link-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                <path d="M10 14C12.2091 14 14 12.2091 14 10C14 7.79086 12.2091 6 10 6C7.79086 6 6 7.79086 6 10C6 12.2091 7.79086 14 10 14Z" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M22 14C24.2091 14 26 12.2091 26 10C26 7.79086 24.2091 6 22 6C19.7909 6 18 7.79086 18 10C18 12.2091 19.7909 14 22 14Z" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M10 26C12.2091 26 14 24.2091 14 22C14 19.7909 12.2091 18 10 18C7.79086 18 6 19.7909 6 22C6 24.2091 7.79086 26 10 26Z" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M22 18V26" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M26 22H18" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-sidebar__link-text">
+                                            <div class="text18 lsp1">Дашборд</div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="profile-sidebar__link ">
+                                        <div class="profile-sidebar__link-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                <path d="M10.5334 21.4659L3.64718 18.9284C3.4573 18.8583 3.29347 18.7317 3.17775 18.5657C3.06204 18.3996 3 18.2021 3 17.9997C3 17.7973 3.06204 17.5997 3.17775 17.4337C3.29347 17.2676 3.4573 17.141 3.64718 17.0709L10.5334 14.5334L13.0709 7.64718C13.141 7.4573 13.2676 7.29347 13.4337 7.17775C13.5997 7.06204 13.7973 7 13.9997 7C14.2021 7 14.3996 7.06204 14.5657 7.17775C14.7317 7.29347 14.8583 7.4573 14.9284 7.64718L17.4659 14.5334L24.3522 17.0709C24.5421 17.141 24.7059 17.2676 24.8216 17.4337C24.9373 17.5997 24.9994 17.7973 24.9994 17.9997C24.9994 18.2021 24.9373 18.3996 24.8216 18.5657C24.7059 18.7317 24.5421 18.8583 24.3522 18.9284L17.4659 21.4659L14.9284 28.3522C14.8583 28.5421 14.7317 28.7059 14.5657 28.8216C14.3996 28.9373 14.2021 28.9994 13.9997 28.9994C13.7973 28.9994 13.5997 28.9373 13.4337 28.8216C13.2676 28.7059 13.141 28.5421 13.0709 28.3522L10.5334 21.4659Z" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M22 2V8" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M28 9V13" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M19 5H25" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M26 11H30" stroke="#B9B9B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="profile-sidebar__link-text">
+                                            <div class="text18 lsp1">Рейтинг</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="profile-sidebar__action">
+                                    <button class="notification-btn">
+                                        <img src="img/notification.svg" alt="">
+                                        <span></span>
+                                    </button>
+                                    <a href="" class="avatar">
+                                        <img src="img/avatar.webp" alt="">
+                                    </a>
 
-        <a href="resume.html" style="display: block; margin-bottom: 20px;">
-            Резюме
-        </a>
-        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
-            Избранное
-        </a>
-        <a href="history.html" style="display: block; margin-bottom: 20px;">
-            История
-        </a>
-        <a href="balance.html" style="display: block; margin-bottom: 20px;">
-            Баланс
-        </a>
-        <button data-modal="balanceModal" style="border: 2px solid #000;margin-bottom: 20px;">
-            Пополнить баланс
-        </button>
-        <button data-modal="balanceModal2" style="border: 2px solid #000;margin-bottom: 20px;">
-            Пополнить баланс 2
-        </button>
-        <button data-modal="balanceModal3" style="border: 2px solid #000;margin-bottom: 20px;">
-            Пополнить баланс 3
-        </button>
-        <a href="rent.html" style="display: block; margin-bottom: 20px;">
-            Аренда мест
-        </a>
-        <a href="dashboard.html" style="display: block; margin-bottom: 20px;">
-            Дашборд
-        </a>
-        <a href="rating.html" style="display: block; margin-bottom: 20px;">
-            Рейтинг
-        </a>
-        <a href="rating2.html" style="display: block; margin-bottom: 20px;">
-            Рейтинг 2
-        </a>
-        <a href="rating3.html" style="display: block; margin-bottom: 20px;">
-            Рейтинг 3
-        </a>
-        <button data-modal="proModal" style="border: 2px solid #000;margin-bottom: 20px;">
-            Оформить подписку PRO
-        </button>
+                                    <div class="pro-badge">
+                                        <div class="text16 semi-bold-text">
+                                            ВКРЕСЛО PRO
+                                        </div>
+                                        <div class="text14 medium-text gray-text">
+                                            не подключен
+                                        </div>
+                                    </div>
 
-        <a href="profile-edit.html" style="display: block; margin-bottom: 20px;">
-            Профиль (Редактировать)
-        </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="profile__content">
+                            <div class="profile-menu">
+                                <div class="text24 medium-text lsp2">
+                                    Ваш профиль, Андрей
+                                </div>
+                                <div class="profile-menu__items">
+                                    <a href="" class="profile-menu__item ">
+                                        <span class="text16 lsp2">Профиль</span>
+                                    </a>
+                                    <a href="" class="profile-menu__item ">
+                                        <span class="text16 lsp2">Резюме</span>
+                                    </a>
+                                    <a href="" class="profile-menu__item ">
+                                        <span class="text16 lsp2">Избранное</span>
+                                    </a>
+                                    <a href="" class="profile-menu__item ">
+                                        <span class="text16 lsp2">История</span>
+                                    </a>
+                                    <a href="" class="profile-menu__item ">
+                                        <span class="text16 lsp2">Баланс</span>
+                                    </a>
+                                    <a href="" class="profile-menu__item ">
+                                        <span class="text16 lsp2">Поиск</span>
+                                    </a>
+                                    <a href="" class="profile-menu__item ">
+                                        <span class="text16 lsp2">Аренда мест</span>
+                                    </a>
+                                    <a href="" class="profile-menu__item _active">
+                                        <span class="text16 lsp2">Дашборд</span>
+                                    </a>
+                                    <a href="" class="profile-menu__item ">
+                                        <span class="text16 lsp2">Рейтинг</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="profile__grid">
+                                <div class="profile__col">
+                                    <div class="dashboard-stat">
+                                        <div class="dashboard-stat__top text-center">
+                                            <div class="text24 bold-text">
+                                                Статистика
+                                            </div>
+                                            <div class="text18 opacity-60">
+                                                01-31 января
+                                            </div>
+                                        </div>
+                                        <div class="dashboard-stat__bottom">
+                                            <div class="dashboard-stat__col">
+                                                <div class="text18 opacity-60">Потрачено</div>
+                                                <div class="text28 semi-bold-text">24 000 ₽</div>
+                                            </div>
+                                            <div class="dashboard-stat__col">
+                                                <div class="text18 opacity-60">Арендовано</div>
+                                                <div class="text28 semi-bold-text">38 мест </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-stat2">
+                                        <div class="dashboard-stat2__col">
+                                            <div class="dashboard-item _views">
+                                                <div class="text14 gray-text4">
+                                                    Просмотры профиля
+                                                </div>
+                                                <div class="text32 semi-bold-text">
+                                                    128
+                                                </div>
+                                                <div class="dashboard-item__num _green">
+                                                    <span class="text18">
+                                                        +12
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="dashboard-item">
+                                                <div class="text14 gray-text4">
+                                                    Новых отзыва
+                                                </div>
+                                                <div class="text32 semi-bold-text">
+                                                    18
+                                                </div>
+                                                <div class="dashboard-item__num">
+                                                    <span class="text18">
+                                                        0
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard-stat2__col">
+                                            <div class="dashboard-item">
+                                                <div class="text14 gray-text4">
+                                                    Просмотры профиля
+                                                </div>
+                                                <div class="text32 semi-bold-text">
+                                                    128
+                                                </div>
+                                                <div class="dashboard-item__num _green">
+                                                    <span class="text18">
+                                                        +12
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="dashboard-item _rating">
+                                                <div class="rating-block _disabled" data-rating="4.5">
+                                                    <div class="rating">
+                                                        <div class="rating__stars">
+                                                            <img src="img/rating.svg" alt="" class="rating__img">
+                                                            <div class="rating__fill">
+                                                                <img src="img/rating-fill.svg" alt="" class="rating__img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="dashboard-item__bottom">
+                                                    <div class="text14 gray-text4">
+                                                        Ваш рейтинг
+                                                    </div>
+                                                    <div class="text32 semi-bold-text">
+                                                        4.25
+                                                    </div>
+                                                    <div class="dashboard-item__num _red">
+                                                        <span class="text18">
+                                                        -0.2
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_mt20">
+                                        <div class="adv">
+                                            <div class="text20 medium-text">
+                                                Рекламный блок
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="resume-pro _mt20">
+                                        <div class="pro">
+                                            <div class="pro__col">
+                                                <img src="img/logo2.svg" alt="" class="pro__logo">
+                                                <div class="pro__badge">
+                                                    <span class="text12">PRO</span>
+                                                </div>
+                                            </div>
+                                            <div class="pro__col2">
+                                                <div class="pro__text text20">
+                                                    Поиск рабочего места <span class="_no-wrap">без ограничений</span>
+                                                </div>
+                                            </div>
+                                            <div class="pro__col3">
+                                                <button class="pro__btn m-btn m-btn-small m-btn-blue">
+                                                    <span>Купить PRO</span>
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile__col2">
+                                    <div class="notifications _static">
+                                        <div class="text20 medium-text">
+                                            Панель уведомлений
+                                        </div>
+                                        <div class="notifications__items">
+                                            <div class="notification-item">
+                                                <div class="_flex-between">
+                                                    <div class="text18 medium-text lsp2">
+                                                        Ваша бронь подтверждена
+                                                    </div>
+                                                    <button class="notification-item__close">
+                                                        <img src="img/close.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="_mt10">
+                                                    <div class="text14 gray-text lsp2">
+                                                        Ваша бронь добавлена в раздел арендованные места
+                                                    </div>
+                                                </div>
+                                                <div class="notification-item__nav">
+                                                    <div class="notification-item__badge">
+                                                        <span class="text16 lsp2">Бронь YT-2187</span>
+                                                    </div>
+                                                    <button class="notification-item__btn m-btn m-btn-black">
+                                                        <span>Перейти к брони</span>
+                                                    </button>
+                                                    <button class="notification-item__btn m-btn m-btn-gray2">
+                                                        <span>Скрыть</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="notification-item">
+                                                <div class="_flex-between">
+                                                    <div class="text18 medium-text lsp2">
+                                                        Ваша бронь подтверждена
+                                                    </div>
+                                                    <button class="notification-item__close">
+                                                        <img src="img/close.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="_mt10">
+                                                    <div class="text14 gray-text lsp2">
+                                                        Ваша бронь добавлена в раздел арендованные места
+                                                    </div>
+                                                </div>
+                                                <div class="notification-item__nav">
+                                                    <div class="notification-item__badge">
+                                                        <span class="text16 lsp2">Бронь YT-2187</span>
+                                                    </div>
+                                                    <button class="notification-item__btn m-btn m-btn-black">
+                                                        <span>Перейти к брони</span>
+                                                    </button>
+                                                    <button class="notification-item__btn m-btn m-btn-gray2">
+                                                        <span>Скрыть</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="notification-item">
+                                                <div class="_flex-between">
+                                                    <div class="text18 medium-text lsp2">
+                                                        Ваша бронь подтверждена
+                                                    </div>
+                                                    <button class="notification-item__close">
+                                                        <img src="img/close.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="_mt10">
+                                                    <div class="text14 gray-text lsp2">
+                                                        Ваша бронь добавлена в раздел арендованные места
+                                                    </div>
+                                                </div>
+                                                <div class="notification-item__nav">
+                                                    <div class="notification-item__badge">
+                                                        <span class="text16 lsp2">Бронь YT-2187</span>
+                                                    </div>
+                                                    <button class="notification-item__btn m-btn m-btn-black">
+                                                        <span>Перейти к брони</span>
+                                                    </button>
+                                                    <button class="notification-item__btn m-btn m-btn-gray2">
+                                                        <span>Скрыть</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="notification-item">
+                                                <div class="_flex-between">
+                                                    <div class="text18 medium-text lsp2">
+                                                        Ваша бронь подтверждена
+                                                    </div>
+                                                    <button class="notification-item__close">
+                                                        <img src="img/close.svg" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="_mt10">
+                                                    <div class="text14 gray-text lsp2">
+                                                        Ваша бронь добавлена в раздел арендованные места
+                                                    </div>
+                                                </div>
+                                                <div class="notification-item__nav">
+                                                    <div class="notification-item__badge">
+                                                        <span class="text16 lsp2">Бронь YT-2187</span>
+                                                    </div>
+                                                    <button class="notification-item__btn m-btn m-btn-black">
+                                                        <span>Перейти к брони</span>
+                                                    </button>
+                                                    <button class="notification-item__btn m-btn m-btn-gray2">
+                                                        <span>Скрыть</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <button class="notifications__btn m-btn m-btn-small m-btn-black-outline">
+                                            <span>Показать еще</span>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-footer">
+                            <a href="" class="profile-footer__logout m-btn m-btn-small m-btn-gray2">
+                                <span>Выйти</span>
+                            </a>
+                            <div class="profile-footer__bottom">
+                                <div class="profile-footer__action _flex">
+                                    <a href="" class="profile-footer__action-btn">
+                                        <img src="img/home.svg" alt="">
+                                    </a>
+                                    <button class="profile-footer__action-btn _toggle-menu">
+                                        <img src="img/burger.svg" alt="">
+                                    </button>
+                                </div>
+                                <button class="profile-footer__btn m-btn m-btn-black">
+                                    <span>Найти место</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
     </div>
-
-
-
-
-
 
 
     <div class="modal" id="contactsModal">
@@ -926,243 +1298,6 @@
         </div>
     </div>
 
-    <div class="modal balance-modal" id="balanceModal">
-        <div class="modal__bg modal-bg _close-modal"></div>
-        <div class="modal__dialog">
-            <div class="handle-zone">
-                <div class="handle-pill"></div>
-            </div>
-            <div class="modal__scroll">
-                <div class="modal__top">
-                    <button class="modal__back _close-modal">
-                        <img src="img/back2.svg" alt="">
-                        <span>Назад</span>
-                    </button>
-                    <div class="modal__title text24 lsp2 medium-text">
-                        Пополнить баланс
-                    </div>
-                    <button class="close-btn _close-modal">
-                        <img src="img/close2.svg" alt="">
-                    </button>
-                </div>
-
-                <div class="balance-modal__desc text18 text14-tablet lsp2 text-center">
-                    Выберите от куда будет пополняться баланс
-                </div>
-                <div class="balance-info _mt24">
-                    <div class="balance-cards slider">
-                        <div class="slider__wrap">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="card-item _active">
-                                            <img src="img/ya.webp" alt="">
-                                            <div class="text18">СБП Яндекс</div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card-item">
-                                            <img src="img/ya.webp" alt="">
-                                            <div class="text18">СБП Яндекс</div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card-item">
-                                            <img src="img/plus3.svg" alt="">
-                                            <div class="text18">Добавить карту</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="balance-info__nav">
-                        <button class="m-btn m-btn-small m-btn-blue">
-                            <span>Пополнить баланс</span>
-                        </button>
-                        <button data-modal="reviewsModal" class="m-btn m-btn-small m-btn-gray2">
-                            <span>Назад</span>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="modal balance-modal" id="balanceModal2">
-        <div class="modal__bg modal-bg _close-modal"></div>
-        <div class="modal__dialog">
-            <div class="handle-zone">
-                <div class="handle-pill"></div>
-            </div>
-            <div class="modal__scroll">
-                <div class="modal__top">
-                    <button class="modal__back _close-modal">
-                        <img src="img/back2.svg" alt="">
-                        <span>Назад</span>
-                    </button>
-                    <div class="modal__title text24 lsp2 medium-text">
-                        Пополнить баланс
-                    </div>
-                    <button class="close-btn _close-modal">
-                        <img src="img/close2.svg" alt="">
-                    </button>
-                </div>
-
-                <div class="balance-modal__desc text18 text14-tablet lsp2 text-center">
-                    Ожидание подтверждения пополнения баланса с банка
-                </div>
-                <div class="balance-info _mt24">
-                    <div class="balance-bank">
-                        <div class="text20 medium-text">
-                            Ответ от банка
-                        </div>
-                        <div class="text16 gray-text4">
-                            ожидание
-                        </div>
-                        <div class="_mt10">
-                            <div class="text32">
-                                2 400₽
-                            </div>
-                        </div>
-                    </div>
-                    <div class="balance-info__nav">
-                        <button data-modal="reviewsModal" class="m-btn m-btn-small m-btn-gray2">
-                            <span>Назад</span>
-                        </button>
-                        <button class="m-btn m-btn-small m-btn-blue">
-                            <span>Закрыть</span>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="modal balance-modal" id="balanceModal3">
-        <div class="modal__bg modal-bg _close-modal"></div>
-        <div class="modal__dialog">
-            <div class="handle-zone">
-                <div class="handle-pill"></div>
-            </div>
-            <div class="modal__scroll">
-                <div class="modal__top">
-                    <button class="modal__back _close-modal">
-                        <img src="img/back2.svg" alt="">
-                        <span>Назад</span>
-                    </button>
-                    <div class="modal__title text24 lsp2 medium-text">
-                        Пополнить баланс
-                    </div>
-                    <button class="close-btn _close-modal">
-                        <img src="img/close2.svg" alt="">
-                    </button>
-                </div>
-
-                <div class="balance-modal__desc text18 text14-tablet lsp2 text-center">
-                    Подтверждение пополнения
-                </div>
-                <div class="balance-info _mt24">
-                    <div class="balance-bank">
-                        <div class="text20 medium-text">
-                            Баланс пополнен
-                        </div>
-                        <div class="text16 gray-text4">
-                            Пополнение
-                        </div>
-                        <div class="_mt10">
-                            <div class="text32">
-                                2 400₽
-                            </div>
-                        </div>
-                    </div>
-                    <div class="balance-info__nav">
-                        <button class="m-btn m-btn-small m-btn-blue">
-                            <span>Закрыть</span>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="modal balance-modal" id="proModal">
-        <div class="modal__bg modal-bg _close-modal"></div>
-        <div class="modal__dialog">
-            <div class="handle-zone">
-                <div class="handle-pill"></div>
-            </div>
-            <div class="modal__scroll">
-                <div class="modal__top">
-                    <button class="modal__back _close-modal">
-                        <img src="img/back2.svg" alt="">
-                        <span>Назад</span>
-                    </button>
-                    <div class="modal__title text24 lsp2 medium-text">
-                        Оформить подписку PRO
-                    </div>
-                    <button class="close-btn _close-modal">
-                        <img src="img/close2.svg" alt="">
-                    </button>
-                </div>
-
-
-                <div class="pro-adv">
-
-
-
-                    <div class="pro-adv__desc text24 text-center">
-                        Поиск рабочего места без ограничений
-                    </div>
-
-                    <div class="_mt20">
-                        <div class="pro-price">
-                            <div class="pro-price__num">399₽</div>
-                            <div class="text24">в месяц</div>
-                            <div class="pro-price__badge">
-                                <span class="text20 lsp1">
-                Оформить подписку
-            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="_mt48">
-                        <div class="text24 lsp2 text-center">
-                            Ваши преимущества с ВКРЕСЛО PRO это
-                        </div>
-                    </div>
-                    <div class="_mt20">
-                        <div class="pro-adv__grid">
-                            <div class="pro-adv__col">
-                                <div class="text20 lsp2">Бронь</div>
-                                <div class="text16 lsp2">без ограничений</div>
-                            </div>
-                            <div class="pro-adv__col">
-                                <div class="text20 lsp2">Преимущество</div>
-                                <div class="text16 lsp2">Описание</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="_mt20">
-                        <div class="text16 lsp2 light-text gray-text4">
-                            Подробнее о всех возможностях подписки можно ознакомиться на странице по кнопке ниже
-                        </div>
-                    </div>
-                    <div class="_mt20">
-                        <button class="_w100 m-btn m-btn-small m-btn-blue">
-                            <span>Купить PRO</span>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--  -->
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
